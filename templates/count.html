@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Word Count Result</title>
+</head>
+
+<body>
+  <h1>Word Count Result</h1>
+  {% if word_count is not none %}
+  <p>Word Count: {{ word_count }}</p>
+  {% endif %}
+  <a href="{% url 'index' %}">Go back</a>
+</body>
+
+</html>
